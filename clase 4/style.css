@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slider-frame {
+	width: 1280px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+body {
+    background-color: #121212 !important; /* Fondo negro grisáceo con alta prioridad */
+    color: #f8f8f8; /* Texto claro */
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Títulos con más contraste */
+h1, h2, h3 {
+    color: #ffffff; /* Blanco para títulos */
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra de texto para mayor visibilidad */
+    margin-bottom: 15px;
+}
+
+/* Párrafos con contraste ajustado */
+p {
+    color: #d1d1d1; /* Gris claro, mejor contraste */
+    font-size: 18px;
+    line-height: 1.7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra sutil */
+}
+
+/* Listas con mayor contraste */
+ul {
+    color: #e0e0e0;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+a:hover {
+    color: #ff4b91;
+}
+
+/* Estilo para las líneas horizontales (hr) */
+hr {
+    border: none;
+    height: 3px; /* Grosor de la línea */
+    background: linear-gradient(to right, #00FF00, #32CD32); /* Degradado de verde */
+    width: 60%; /* Controla el ancho de la línea */
+    margin: 40px auto; /* Centra la línea y deja espacio arriba y abajo */
+    border-radius: 5px; /* Opcional: para redondear los bordes */
+}
+
+.info-box {
+    background-color: #1e1e1e; /* Un gris oscuro para que combine con el fondo */
+    padding: 20px;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2); /* Brillo verde sutil */
+    border: 1px solid #2e2e2e;
+    transition: transform 0.2s ease;
+}
+
+.info-box {
+	background-color: #1e1e1e; /* Fondo oscuro estilizado */
+	border: 1px solid #333;
+	border-radius: 15px;
+	padding: 25px;
+	margin: 20px auto;
+	max-width: 800px;
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+	text-align: left;
+	color: #ccc;
+  }
+  
+  /* Mejora visual de las listas */
+  .info-box ul {
+	list-style-type: disc;
+	padding-left: 20px;
+  }
+  
+  .info-box li {
+	margin-bottom: 10px;
+	font-size: 1.1rem;
+	line-height: 1.5;
+  }
+  
+ /*--------------------------------------------------- */
+
+ /* Contenedor principal de la tienda */
+.store-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 20px;
+  }
+  
+  /* Estilo del grid de productos */
+  .product-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+  }
+  
+  /* Tarjeta de producto */
+  .product-card {
+	background-color: #1e1e1e;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 0 15px rgba(0, 255, 0, 0.15);
+	transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+	transform: translateY(-5px);
+  }
+  
+  /* Imagen del producto */
+  .product-card img {
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+  }
+  
+  /* Info del producto */
+  .product-info {
+	padding: 20px;
+	text-align: center;
+  }
+  
+  .product-info h3 {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+	color: #fff;
+  }
+  
+  .product-info p {
+	font-size: 1rem;
+	margin-bottom: 10px;
+	color: #ccc;
+  }
+  
+  .product-price {
+	font-weight: bold;
+	color: #00ff00;
+	font-size: 1.1rem;
+  }
+  
+  /* Botón de compra o detalles */
+  .product-btn {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 20px;
+	background-color: transparent;
+	color: #00ff00;
+	border: 1px solid #00ff00;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+	text-decoration: none;
+	font-size: 0.95rem;
+  }
+  
+  .product-btn:hover {
+	background-color: #00ff00;
+	color: #121212;
+  }
+  
+  body {
+    background-image: url('./Imagenes/fondo\ pagina.jpg'); /* Cambia por tu ruta */
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #f0f0f0; /* Asegura contraste con el fondo */
+  }
+  
+/* Navbar oscuro estilo YouTube + estético personalizado */
+.navbar {
+	background-color: #121212 !important; /* Fondo negro grisáceo */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+  }
+  
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+	color: #f0f0f0 !important; /* Texto claro */
+	font-weight: 500;
+	transition: color 0.3s ease;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .navbar .nav-link:hover,
+  .navbar .navbar-brand:hover {
+	color: #ff4b91 !important; /* Hover rosado neón */
+  }
+  
+  .navbar-toggler {
+	border-color: #ffffff33;
+  }
+  
+  .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.9)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
